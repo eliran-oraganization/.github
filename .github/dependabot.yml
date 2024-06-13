@@ -5,53 +5,25 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    labels:
-      - "dependencies"
-      - "npm"
+
 
   # Check for updates in Python pip requirements.txt files
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
-    labels:
-      - "dependencies"
-      - "python"
 
   # Check for updates in GitHub Actions workflows
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
-    labels:
-      - "dependencies"
-      - "github-actions"
 
   # Check for updates in Dockerfiles
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
-    labels:
-      - "dependencies"
-      - "docker"
-
-  # Check for updates in NuGet packages
-  - package-ecosystem: "nuget"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    registries:
-      - github
-    labels:
-      - "dependencies"
-      - "nuget"
-    registries:
-      github:
-        type: nuget-feed
-        url: "https://nuget.pkg.github.com/LegitSecurity/index.json"
-        username: bot-legit
-        password: ${{secrets.GHCR_PAT}}
 
   # Check for updates in Maven pom.xml files
   - package-ecosystem: "maven"
