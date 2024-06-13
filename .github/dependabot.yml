@@ -71,10 +71,10 @@ updates:
       - "cargo"
 
   # Check for updates in Elixir Mix.exs files
-  - package-ecosystem: "hex"
+  - package-ecosystem: "terraform"
     directory: "/"
     schedule:
       interval: "daily"
     labels:
       - "dependencies"
-      - "hex"
+      - "terraform"
