@@ -70,7 +70,6 @@ updates:
       - "dependencies"
       - "cargo"
 
-  # Check for updates in Elixir Mix.exs files
   - package-ecosystem: "terraform"
     directory: "/"
     schedule:
