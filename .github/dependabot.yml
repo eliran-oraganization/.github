@@ -1,6 +1,6 @@
 version: 2
 updates:
-  # Check for updates in npm package.json files
+  # Check for updates in npm package.json files fgd
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
